@@ -1,0 +1,24 @@
+if [ "$#" -eq 1 ]; then
+    args=("$@")
+
+
+    myfile=$PWD"/${args[0]}"
+    myimg=$PWD"/img"
+    localpath="/Users/lazyer/Sites/tempmd"
+    localhtml="$localpath/index.html"
+    localimg="$localpath/img"
+
+    echo "[*]Selected HTML file  : "$myfile
+    echo "[*]Selected img folder : "$myimg
+    echo "[*]Copy HTML file path : "$localhtml
+    echo "[*]Copy img floer path : "$localimg
+    echo "...."
+
+    eval "cp $myfile $localhtml && cp -r $myimg $localimg"
+    echo "...."
+    echo "[*]Work finished"
+    exit 1
+else
+    echo "[ERROR]Only one parameter possible"
+    echo "[ERROR]Exmaple : 'openmd <html file>'"
+fi

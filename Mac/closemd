@@ -1,0 +1,16 @@
+if [ "$#" -eq 0 ]; then
+    args=("$@")
+
+
+    localpath="/Users/lazyer/Sites/tempmd"
+    localhtml="$localpath/index.html"
+    localimg="$localpath/img"
+
+    echo "...."
+    eval "rm -rf $localhtml $localimg"
+    echo "[*]Remove HTML and img"
+    echo "[*]Work finished"
+    exit 1
+else
+    echo "[ERROR]Exmaple : 'closemd'"
+fi
