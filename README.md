@@ -10,7 +10,7 @@ It's good to keep form and style.
 
 - Need to install apache server
 
->>openmd [your md filename] [your img dirname]
+>>$openmd [your md filename] [your img dirname]
 
 **and use webclipper!!**
 
@@ -20,9 +20,9 @@ It's good to keep form and style.
 - need apache server and set default directory to /Users/[user name]/Sites/tempmd
 - img directory should exist at mdfile path
 
->>openmd [your md filename]
+>>$openmd [your md filename]
 
 **open http://localhost/tempmd and use webclipper!!**
 
->>closemd
+>>$closemd
 
